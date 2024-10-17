@@ -10,9 +10,9 @@ import Lottie from 'lottie-react';
 const FindCourse = () => {
   return (
     <div className='find-div'>
-         <div style={{width:'50%'}}>
+         <div className='find-animation'>
         {/* <img src={findimage} width= '103%' height='auto'/> */}
-        <Lottie animationData={AnimationOne} />
+        <Lottie animationData={AnimationOne}/>
       </div>
       <div>
        <p className='find-heading'>Let's Find the right<br/> Course for you! </p>

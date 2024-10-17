@@ -5,91 +5,101 @@
 }
 
 .navbar {
-    position: relative;
-    display: flex;
-    align-items: center; /* Align items vertically */
-    padding-top: 10px;
-    padding-right: 10px;
+  position: relative;
+  display: flex;
+  align-items: center; 
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.logo {
+  width: 11%;
+  margin-left: 90px; 
+  margin-top: -5px;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row; 
+  gap: 95px;
+  transition: max-height 0.3s ease-in-out;
+  max-height: none;
+  margin-left: auto; 
+}
+
+.nav-links.show {
+  max-height: 500px; 
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  color: rgb(254,198,82);
+}
+
+/* Responsive nav */
+@media (max-width: 600px) {
+  .navbar {
+      padding: 0;
+      flex-direction: column;
+      align-items: baseline;
   }
-  
+
   .logo {
-    width: 11%;
-    margin-left: 90px; 
-    margin-top: -5px;
+      width: 30%; 
+      margin-left: 30px;
+      margin-top: 0; 
+      position: relative;
+      top: 32px;
+      left: -5px;
+
   }
-  
-  .toggle-button {
-    background: none;
-    border: none;
-    color: black;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
+
   .nav-links {
-    display: flex;
-    flex-direction: row; 
-    gap:95px;
-    transition: max-height 0.3s ease-in-out;
-    max-height: none;
-    margin-left: auto; 
+      flex-direction: column;
+      max-height: 0; 
+      overflow: hidden; 
+      margin-top: 15px;
+      width: 100%; 
+      padding: 0; 
+      gap:30px;
   }
-  
+
   .nav-links.show {
-    max-height: 500px; 
+    margin-left: 27px;
   }
-  
-  .nav-links a {
-    color: black;
-    text-decoration: none;
-    padding: 10px; /* Vertical padding */
-    transition: background 0.3s;
-  }
-  
-  /* Hover effect */
-  .nav-links a:hover {
-   color: rgb(254,198,82)
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 600px) {
-    .nav-links {
-      flex-direction: column; /* Change to horizontal layout on mobile */
-      max-height: 0; /* Initially hidden on mobile */
-      overflow: hidden; /* Hide overflow */
-      margin-top: 30px;
-    }
-  
-    .nav-links.show {
-      max-height: 500px; /* Expand height when shown */
-    }
-  
-    .toggle-button {
+
+  .toggle-button {
       display: block; 
       position: relative;
-      top: -14px;
-      left: 58px;
+        left: 315px;
+        width: 60px;
+        top: -13px;
     }
-  
-    .nav-links a {
-      padding: 30px 0px; 
-    }
-    .logo{
-        display: none;
-    }
-    .navbar{
-        flex-direction: row-reverse;
-        align-items: baseline;
-        padding: 0px;
-        gap: 70px;
-    }
+
+  .nav-links a {
+      padding: 15px 0; 
   }
-  
-  @media (min-width: 601px) {
-    .toggle-button {
-      display: none; /* Hide toggle button on larger screens */
-    }
+}
+
+@media (min-width: 601px) {
+  .toggle-button {
+      display: none; 
   }
+}
 input{
     width: 200px;
     margin-top: 5px;
@@ -128,6 +138,10 @@ label{
     gap: 10px;
     margin-top: -3px;
 }
+.home-image{
+  width: 115%;
+  height: auto;
+}
 .start{
     background-color: rgb(254,198,82);
     width: 200px;
@@ -163,7 +177,7 @@ h1{
   }
   .areas-header{
   font-size: 46px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 61.6px;
   letter-spacing: -0.02em;
   text-align: center;
@@ -285,7 +299,10 @@ h1{
     padding-right: 50px;
     /* padding-left: 50px; */
     margin-top: 20px;
- }         
+ }      
+ .find-animation{
+  width: 50%;
+ }   
  .find-heading{
     font-size: 50px;
     font-weight: 700;
@@ -563,4 +580,136 @@ margin-top: 80px;
 .icon-footer{
     color: rgb(139,115,198);
     padding-right: 5px; 
+}
+
+     /* Responsive home */
+@media (max-width: 600px) {
+    .home-div{
+      flex-direction: column-reverse;
+      margin-top: 50px;
+      margin-left: 40px;
+    }
+    h1 {
+      font-size: 36px;
+  }
+  h3 {
+    line-height: 26px;
+    font-size: 16px;
+    margin-top: 18px;
+  }
+  .home-image{
+    width: 115%;
+    margin-left: -14px;
+    margin-bottom: 20px;
+  }
+  .counter-number {
+    font-size: 20px;
+   }
+   .counter-text {
+    font-size: 10px;
+     }
+     .counter-container {
+      padding: 40px 0px;
+      justify-content: center;
+      gap: 25px;
+  }
+
+  /* about  */
+  .lottie-anime {
+    flex-direction: column;
+    }
+    .about-us {
+      font-size: 35px;
+      line-height: 54px;
+  }
+     /* Join */
+
+     .join-us {
+      flex-direction: column;
+      gap: 60px;
+      margin-top: 57px;
+      margin-bottom: 100px;
+      margin-left: 40px;
+      margin-right: 15px;
+  }
+  .join-heading {
+    font-size: 40px;
+   }
+   .join-features {
+    display: flex;
+    flex-direction: row;
+    gap: 58px;
+    margin-top: 39px;
+    }
+    .gradient-background {
+      width: 85%;
+      margin-left: 35px;
+  }
+  .join-girl {
+    width: 100%;
+    position: relative;
+    left: -60px;
+    top: 4px;
+   }
+   .feature-heading {
+    font-size: 41px;
+    }
+    .featured-course {
+      flex-direction: column;
+  }
+     /* gain */
+
+     .gain-heading {
+      margin-top: 80px;
+      font-size: 25px;
+      margin-bottom: 35px;
+      margin-left: 40px;
+  }
+  .gain-text {
+    font-size: 12px;
+    }
+    .wrap-gain {
+      gap: 0px;
+  }
+  .check{
+    width:27px;
+  }
+   .gain{
+    gap: 10px;
+   margin-left: 20px;
+   }
+       
+           /* find course */
+
+   .find-div{
+    flex-direction: column-reverse;
+    padding: 0;
+    margin-left: 40px;
+    margin-top: 50px;
+   }    
+   .find-heading{
+    font-size: 40px;
+    margin-bottom: 15px;
+   }  
+   .find-animation{
+    width: 100%;
+   }  
+   .areas-header{
+    padding: 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+   }
+   .car-box{
+    width: 267px;
+    height: 326px;
+   }
+   .caption-two{
+    font-size: 23px;
+    margin-top: 100px;
+   }
+   .footer-div {
+       flex-direction: column;
+       gap: 63px;
+       margin: 86px 40px;
+   }
 }

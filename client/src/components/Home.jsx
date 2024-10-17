@@ -36,10 +36,9 @@ const Home = () => {
             /></button>
       </div>
       <div data-aos="zoom-in-left">
-      <img src={Homegirl} alt="Description of my image" width= '115%' height='auto' />
+      <img src={Homegirl} alt="Description of my image"  className="home-image"/>
       </div>
     </div>
-    
 
   
     <div>

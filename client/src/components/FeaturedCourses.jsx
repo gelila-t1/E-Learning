@@ -117,7 +117,7 @@ const FeaturedCourses = () => {
 
 <div className='gain'>
 <div>
-<Lottie animationData={AnimationThree}/>
+<Lottie animationData={AnimationThree} className='check'/>
 </div>
 <div className="gain-text">
   Completion Certificate 
@@ -126,7 +126,7 @@ const FeaturedCourses = () => {
 
 <div className='gain'>
 <div>
-<Lottie animationData={AnimationThree}/>
+<Lottie animationData={AnimationThree} className='check'/>
 </div>
 <div className="gain-text">
  Recommendation Letter
@@ -135,7 +135,7 @@ const FeaturedCourses = () => {
 
 <div className='gain'>
 <div>
-<Lottie animationData={AnimationThree}/>
+<Lottie animationData={AnimationThree} className='check'/>
 </div>
 <div className="gain-text">
 Job Ready Skills
@@ -147,7 +147,7 @@ Job Ready Skills
 
 <div className='gain'>
 <div>
-<Lottie animationData={AnimationThree}/>
+<Lottie animationData={AnimationThree} className='check'/>
 </div>
 <div className="gain-text">
   Completion Certificate 
@@ -156,7 +156,7 @@ Job Ready Skills
 
 <div className='gain'>
 <div>
-<Lottie animationData={AnimationThree}/>
+<Lottie animationData={AnimationThree} className='check'/>
 </div>
 <div className="gain-text">
  Recommendation Letter
@@ -165,7 +165,7 @@ Job Ready Skills
 
 <div className='gain'>
 <div>
-<Lottie animationData={AnimationThree}/>
+<Lottie animationData={AnimationThree} className='check'/>
 </div>
 <div className="gain-text">
 Job Ready Skills
@@ -177,7 +177,7 @@ Job Ready Skills
 
 <div className='gain'>
 <div>
-<Lottie animationData={AnimationThree}/>
+<Lottie animationData={AnimationThree} className='check'/>
 </div>
 <div className="gain-text">
   Completion Certificate 
@@ -186,7 +186,7 @@ Job Ready Skills
 
 <div className='gain'>
 <div>
-<Lottie animationData={AnimationThree}/>
+<Lottie animationData={AnimationThree} className='check'/>
 </div>
 <div className="gain-text">
  Recommendation Letter
@@ -195,7 +195,7 @@ Job Ready Skills
 
 <div className='gain'>
 <div>
-<Lottie animationData={AnimationThree}/>
+<Lottie animationData={AnimationThree} className='check'/>
 </div>
 <div className="gain-text">
 Job Ready Skills
